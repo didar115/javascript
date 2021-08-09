@@ -47,3 +47,22 @@ var rahim = {
 console.log(rahim.fullName);   */
 
 
+
+//Statement & Expression 
+
+
+
+// console.log(2+2);
+// console.log(3*7);
+// console.log(1 + 2 + 3 * 8 ** 9 - Math.sqrt(4.0));
+// console.log(min(2,22));
+
+var y = 13;
+
+function myFunction() {
+  let x = 12;
+  console.log(y);
+}
+
+myFunction();
+// console.log(x);
