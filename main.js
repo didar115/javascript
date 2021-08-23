@@ -76,15 +76,13 @@ console.log(rahim.fullName);   */
 // 	}
 //    //calculate seer to mon
 //   let seerToMonConvertion = seer / 40;
-  
+
 //   //return output
 // 	return seerToMonConvertion;
 // }
 
 // var seerInput = 100;
 // console.log(seerToMon(seerInput),' Mon');
-
-
 
 // // Answer to question no 02
 //    // totalSales
@@ -115,14 +113,9 @@ console.log(rahim.fullName);   */
 //     let totalpurches=totalSales(5 , 2 , 4 );
 //         console.log(totalpurches);
 
-
-
-
-
 // // Assignment problem 3
 
 // function deliveryCost(shirtQuantity) {
-
 
 // //checking  the parameter is it  a number or not
 // if (typeof (shirtQuantity) != "number")
@@ -169,16 +162,9 @@ console.log(rahim.fullName);   */
 // var shirtQuantity = 700;
 // console.log(deliveryCost(shirtQuantity));
 
+// Answer to question no 04
 
-
-
-
-
-
-
-  // Answer to question no 04
-
-    // perfectFriend
+// perfectFriend
 //     function perfectFriend(goodFriendlist) {
 //         //checking the parameter is it a object or not
 //         if (typeof (goodFriendlist) != "object") {
@@ -206,38 +192,80 @@ console.log(rahim.fullName);   */
 //     }
 //         //give Error Message if not found any perfect friend
 //       return "Sorry!! You don't have any perfect friend.";
-      
-      
+
 // }
 //     var friends = [5, 'piash', 'shovon','ananna', 'sakib', 'limon'];
 //     var BestFriend = perfectFriend(friends);
 //     console.log(BestFriend);
 
-// search index 
+// search index
 
+// const products = [
+//   { name: 'samsung phone', price: 12000},
+//   { name: 'samsung watch', price: 13000},
+//   { name: 'samsung phone', price: 143000},
+//   { name: 'samsung earphone', price: 16000},
+//   { name: 'samsung TWS', price: 19000},
+// ]
 
+// function searchProducts(product, searchIndex) {
 
-const products = [
-  { name: 'samsung phone', price: 12000},
-  { name: 'samsung watch', price: 13000},
-  { name: 'samsung phone', price: 143000},
-  { name: 'samsung earphone', price: 16000},
-  { name: 'samsung TWS', price: 19000},
-]
+//   const matched = [];
+//   for (const product of products) {
 
+//     const name = product.price;
+//     if (name==searchIndex) {
+//       matched.push(product);
+//     }
+//   }
+//   return matched;
+// }
 
-function searchProducts(product, searchIndex) {
+// const halum = searchProducts(products, '143000');
+// console.log(halum);
 
-  const matched = [];
-  for (const product of products) {
+// baap er Bank project
 
-    const name = product.price;
-    if (name==searchIndex) {
-      matched.push(product);
-    }
-  }
-  return matched;
+function getInputValue(fieldId) {
+	const inputField = document.getElementById(fieldId);
+	const inputFieldInText = inputField.value;
+	const inputValue = parseFloat(inputFieldInText);
+	inputField.value = "";
+	return inputValue;
 }
 
-const halum = searchProducts(products, '143000');
-console.log(halum);
+function updateBankAmount(amount, fieldId) {
+	const updateField = document.getElementById(fieldId);
+	const updateFieldInText = updateField.innerText;
+	const previousValue = parseFloat(updateFieldInText);
+	const updateAmount = previousValue + amount;
+	updateField.innerText = updateAmount;
+}
+function updateBankAmountTotal(amount, isAdding) {
+	const getTag = document.getElementById("balance-update");
+	const valueInText = getTag.innerText;
+	const previosBanlace = parseFloat(valueInText);
+	let updateBalance;
+	if (isAdding == true) {
+		updateBalance = previosBanlace + amount;
+	} else {
+		updateBalance = previosBanlace - amount;
+	}
+
+	getTag.innerText = updateBalance;
+}
+
+document
+	.getElementById("deposit-button")
+	.addEventListener("click", function () {
+		const amount = getInputValue("deposit-value");
+		const updatedAmount = updateBankAmount(amount, "deposit-update");
+		updateBankAmountTotal(amount, true);
+	});
+document
+	.getElementById("withdraw-button")
+	.addEventListener("click", function () {
+		const amount = getInputValue("withdraw-value");
+		const updatedAmount = updateBankAmount(amount, "withdraw-update");
+		updateBankAmountTotal(amount, false);
+	});
