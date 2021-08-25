@@ -351,8 +351,33 @@ console.log(productNames);
 console.log(productPrice);
 */
 
+//filter
+/*
+const numbers = [10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30];
+const bigNumer = numbers.filter(number => number > 25);
+const smallNumber = numbers.filter(number => number < 15);
+console.log(bigNumer);
+console.log(smallNumber);
 
+*/
+//filter from array object
 
+const products = [
+	{ name: "water bottle", price: 50, color: "yellow" },
+	{ name: "mobile phone", price: 5000, color: "black" },
+	{ name: "sticky note", price: 50, color: "pink" },
+	{ name: "water glass", price: 500, color: "white" },
+];
 
+const expensive = products.filter(Find => Find.price >= 500);
+const color = products.filter(Find => Find.color =='black' );
+console.log(expensive);
+console.log(color);
+
+//learning find
+//find retuen direct element - map return array
+
+const whiteColor = products.find(product => product.color == 'white');
+console.log(whiteColor);
 
 
