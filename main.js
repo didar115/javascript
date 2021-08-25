@@ -361,7 +361,7 @@ console.log(smallNumber);
 
 */
 //filter from array object
-
+/*
 const products = [
 	{ name: "water bottle", price: 50, color: "yellow" },
 	{ name: "mobile phone", price: 5000, color: "black" },
@@ -380,4 +380,24 @@ console.log(color);
 const whiteColor = products.find(product => product.color == 'white');
 console.log(whiteColor);
 
+*/
+
+//  Class, constructor, method, create object from class
+
+class Support{
+	name;
+	role = 'support web dev';
+	address = 'BD';
+	constructor(name) {
+		this.name = name;
+	}
+	startSession() {
+		console.log(this.name,"start a support session");
+	}
+}
+const aamir = new Support("aamir");
+const salman = new Support("salman");
+console.log(aamir);
+console.log(salman);
+aamir.startSession();
 
