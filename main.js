@@ -226,59 +226,133 @@ console.log(rahim.fullName);   */
 
 // baap er Bank project
 
-function getInputValue(fieldId) {
-	const inputField = document.getElementById(fieldId);
-	const inputFieldInText = inputField.value;
-	const inputValue = parseFloat(inputFieldInText);
-	document.getElementById(fieldId).value = "";
-	return inputValue;
-}
+// function getInputValue(fieldId) {
+// 	const inputField = document.getElementById(fieldId);
+// 	const inputFieldInText = inputField.value;
+// 	const inputValue = parseFloat(inputFieldInText);
+// 	document.getElementById(fieldId).value = "";
+// 	return inputValue;
+// }
 
-function updateBankAmount(amount, fieldId) {
-	const previousValue = getInnerText(fieldId);
-	const updateAmount = previousValue + amount;
-	// const depositValue = getInnerText('deposit-update');
-	// const withDrawValue = getInnerText('withdraw-update');
-	// const updateAmount = depositValue - withDrawValue + 1200;
-	document.getElementById(fieldId).innerText = updateAmount;
-}
+// function updateBankAmount(amount, fieldId) {
+// 	const previousValue = getInnerText(fieldId);
+// 	const updateAmount = previousValue + amount;
+// 	// const depositValue = getInnerText('deposit-update');
+// 	// const withDrawValue = getInnerText('withdraw-update');
+// 	// const updateAmount = depositValue - withDrawValue + 1200;
+// 	document.getElementById(fieldId).innerText = updateAmount;
+// }
 
-function getInnerText(fieldId) {
-	const hasTag = document.getElementById(fieldId);
-	const valueInText = hasTag.innerText;
-	const value = parseFloat(valueInText);
-	return value;
-}
-function updateBankAmountTotal() {
-	const depositValue = getInnerText("deposit-update");
-	const withDrawValue = getInnerText("withdraw-update");
-	const updateAmount = depositValue - withDrawValue + 1200;
-	// const previosBanlace = getInnerText("balance-update");
-	// let updateBalance;
-	// if (isAdding == true) {
-	// 	updateBalance = previosBanlace + amount;
-	// } else {
-	// 	updateBalance = previosBanlace - amount;
-	// }
-	document.getElementById("balance-update").innerText = updateAmount;
-}
+// function getInnerText(fieldId) {
+// 	const hasTag = document.getElementById(fieldId);
+// 	const valueInText = hasTag.innerText;
+// 	const value = parseFloat(valueInText);
+// 	return value;
+// }
+// function updateBankAmountTotal() {
+// 	const depositValue = getInnerText("deposit-update");
+// 	const withDrawValue = getInnerText("withdraw-update");
+// 	const updateAmount = depositValue - withDrawValue + 1200;
+// 	// const previosBanlace = getInnerText("balance-update");
+// 	// let updateBalance;
+// 	// if (isAdding == true) {
+// 	// 	updateBalance = previosBanlace + amount;
+// 	// } else {
+// 	// 	updateBalance = previosBanlace - amount;
+// 	// }
+// 	document.getElementById("balance-update").innerText = updateAmount;
+// }
 
-document
-	.getElementById("deposit-button")
-	.addEventListener("click", function () {
-		const amount = getInputValue("deposit-value");
-		if (amount > 0) {
-			const updatedAmount = updateBankAmount(amount, "deposit-update");
-			updateBankAmountTotal();
-		}
-	});
-document
-	.getElementById("withdraw-button")
-	.addEventListener("click", function () {
-		const amount = getInputValue("withdraw-value");
-		const balance = getInnerText("balance-update");
-		if (amount > 0 && amount <= balance) {
-			const updatedAmount = updateBankAmount(amount, "withdraw-update");
-			updateBankAmountTotal();
-		}
-	});
+// document
+// 	.getElementById("deposit-button")
+// 	.addEventListener("click", function () {
+// 		const amount = getInputValue("deposit-value");
+// 		if (amount > 0) {
+// 			const updatedAmount = updateBankAmount(amount, "deposit-update");
+// 			updateBankAmountTotal();
+// 		}
+// 	});
+// document
+// 	.getElementById("withdraw-button")
+// 	.addEventListener("click", function () {
+// 		const amount = getInputValue("withdraw-value");
+// 		const balance = getInnerText("balance-update");
+// 		if (amount > 0 && amount <= balance) {
+// 			const updatedAmount = updateBankAmount(amount, "withdraw-update");
+// 			updateBankAmountTotal();
+// 		}
+// 	});
+
+
+//MODULE 31
+
+// learning map
+// get numbers array value and multiply the value
+/*
+const numbers = [2, 4, 6, 8, 10];
+const output = [];
+//using loop througt each element
+for (const num of numbers) {
+	const result = num * 2;
+	output.push(result);
+}
+console.log(output); 
+*/
+
+//use a arrow function into avobe function 
+/*
+
+//using arrow function
+const doubleIt = number => number * 2;
+
+for (const num of numbers) {
+	const result = doubleIt(num);
+	output.push(result);
+}
+console.log(output);
+*/
+
+//emplemanting map by arrow function 
+/*
+const doubleIt = number => number * 2;
+
+const numbers = [2, 4, 6, 8, 10];
+const output2 = numbers.map(doubleIt);
+console.log(output2);
+
+//short cut arrow function
+
+const output3 = numbers.map(x => x * 5);
+console.log(output3);
+
+
+//square value
+const output4 = numbers.map(x => x * x);
+console.log(output4);
+
+
+//finding arraw lenght by map
+const friends = ['diar', 'pias', 'fahim', 'tom', 'solaiman'];
+const frndLenght = friends.map(friend => friend.length);
+console.log(frndLenght);
+
+//map in array of object
+const products = [
+	{ name: 'water bottle', price: 50, color: 'yellow' },
+	{ name: 'mobile phone', price: 5000, color: 'black' },
+	{ name: 'sticky note', price: 50, color: 'pink' },
+	{ name: 'water glass', price: 500, color: 'white' },
+	
+]
+
+const productNames = products.map(product => product.name);
+const productPrice = products.map(product => product.price);
+console.log(productNames);
+console.log(productPrice);
+*/
+
+
+
+
+
+
