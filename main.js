@@ -383,7 +383,7 @@ console.log(whiteColor);
 */
 
 //  Class, constructor, method, create object from class
-
+/*
 class Support{
 	name;
 	role = 'support web dev';
@@ -400,4 +400,115 @@ const salman = new Support("salman");
 console.log(aamir);
 console.log(salman);
 aamir.startSession();
+salman.startSession();
+*/
+
+//Inheritance, extends class, super, class method
+/*
+class StudentCare{
+	name;
+	role = 'student care web dev';
+	address = 'BD'
+	constructor(nam, addr) {
+		this.name = nam;
+		this.address.addr;
+	}
+	buildARoutine(student) {
+		console.log(this.name,'Build a routine',student);
+	}
+}
+*/
+
+//29 August 
+
+//34-2 Primitive data type and non-primitive data type
+/*
+-----------------------------------------------------------------
+primitive data type
+Data Types
+1.number
+2.string
+3.boolean
+4.undefined
+5.null
+6.object
+7.symbol
+
+*/
+
+let a = 'hello';
+let b = a;
+a = 'gelo';
+// console.log(a,b);
+
+
+
+// non primitive 
+
+/*
+const x = { job: 'web developer' };
+const y = x;
+console.log(x, y);
+//output: { name: 'web developer' } { name: 'web developer' }
+x.job = 'front end';
+console.log(x, y);
+//output : { name: 'front end' } { name: 'front end' }
+*/
+
+//34-3 Different Truthy and Falsy values in JavaScript
+/*
+truethy:-----------
+true
+number (-,+), 
+any string with sigle space,
+'0',
+empty array,
+empty object
+
+
+falsy:---------
+false
+0, empty string,
+undified,null,
+NaN
+
+
+
+const x = false;
+if (x) {
+	console.log("variable is truthy");
+} else {
+	console.log("variable is falsy");
+}
+//output: variable is falsy;
+
+-------------------------------------------------
+const x = 1;
+if (x) {
+	console.log("variable is truthy");
+} else {
+	console.log("variable is falsy");
+}
+//output:variable is truthy
+----------------------------------------------
+const x = -10;
+if (x) {
+	console.log("variable is truthy");
+} else {
+	console.log("variable is falsy");
+}
+//output: variable is truthy
+
+------------------------------------------
+const x =0;
+if (x) {
+	console.log("variable is truthy");
+} else {
+	console.log("variable is falsy");
+}
+//output: variable is falsy
+*/
+/*--------------------------------------------------------------- */
+//34-4 Null Vs Undefined, different ways you will get undefined
+
 
