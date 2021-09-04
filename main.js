@@ -511,4 +511,43 @@ if (x) {
 /*--------------------------------------------------------------- */
 //34-4 Null Vs Undefined, different ways you will get undefined
 
+// 04 September 2021 
 
+// setTIme Out function 
+
+/*
+
+function didar() {
+	console.log("object3");
+}
+console.log("object1");
+console.log("object2");
+// setTimeout(didar,3000);
+setTimeout(() => {
+	console.log("exploring MDN article");
+},3000)
+console.log("object4");
+*/
+
+// 37-5 Recognize fetch as an Asynchronous activity 
+
+// fetch & setTimeOut did't work in synchronous way 
+/*
+fetch("https://jsonplaceholder.typicode.com/todos/1")
+	.then((response) => response.json())
+	.then((json) => console.log(json));
+
+
+react();
+
+const  react =()=> {
+	console.log("object");
+}
+
+
+
+setInterval(() => {
+	console.log("object");
+	
+}, 1000);
+*/
