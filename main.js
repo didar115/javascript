@@ -551,3 +551,29 @@ setInterval(() => {
 	
 }, 1000);
 */
+
+
+//06 september 2021
+
+/*
+const sum1 = parseInt(prompt("give  1st number"));
+const sum2 = parseInt(prompt("give  2nd number"));
+
+alert(`result = ${sum1 + sum2}`);
+
+
+
+purpose of browser cookie 
+
+Cookies are created to identify you when you visit a new website.
+ The web server — which stores the website’s data — sends a short stream of identifying info to your web browser.
+
+Browser cookies are identified and read by “name-value” pairs. These tell cookies where to be sent and what data to recall.
+
+The server only sends the cookie when it wants the web browser to save it.
+ If you’re wondering “where are cookies stored,” it’s simple: your web browser will store it locally to remember the “name-value pair” that identifies you.
+
+If a user returns to that site in the future, the web browser returns that data to the web server in the form of a cookie. 
+This is when your browser will send it back to the server to recall data from your previous sessions.
+
+*/
