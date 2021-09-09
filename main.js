@@ -577,3 +577,35 @@ If a user returns to that site in the future, the web browser returns that data 
 This is when your browser will send it back to the server to recall data from your previous sessions.
 
 */
+
+
+// 10 september 2021 
+/*
+Why TypeScript is developed while having JavaScript? 
+When JavaScript was developed the JavaScript development team introduced JavaScript as a client-side programming language. But when people were using JavaScript then developers get to know that JavaScript can be used as a server-side programming language also. But When JavaScript was growing then the code of JavaScript became complex and heavy. Because of this, JavaScript was even not able to full fill the requirement of an Object-oriented programming language. This prevents JavaScript from succeeding at the enterprise level as a server-side technology. Then TypeScript was developed by the development team to bridge this gap. 
+
+Features of TypeScript:
+
+TypeScript Code is converted into Plain JavaScript Code:: TypeScript code is not understandable by the browsers. That’s why if the code is written in TypeScript then it is compiled and converted the code i.e. translate the code into JavaScript.The above process is known as Trans-piled. With the help of JavaScript code, browsers are able to read the code and display it.
+JavaScript is TypeScript: Whatever code is written in JavaScript can be converted to TypeScript by changing the extension from .js to .ts.
+Use TypeScript anywhere: TypeScript code can be run on any browser, device, or in any operating system. TypeScript is not specific to any Virtual-machine etc.
+TypeScript supports JS libraries: With TypeScript, developers can use existing JavaScript code, incorporate popular JavaScript libraries, and can be called from other JavaScript code.
+Difference between TypeScript and JavaScript:
+
+
+
+
+TypeScript is known as an Object-oriented programming language whereas JavaScript is a scripting language.
+TypeScript has a feature known as Static typing but JavaScript does not have this feature.
+TypeScript gives support for modules whereas JavaScript does not support modules.
+TypeScript has Interface but JavaScript does not have an Interface.
+Advantages of using TypeScript over JavaScript 
+
+TypeScript always points out the compilation errors at the time of development only. Because of this in the run-time, the chance of getting errors is very less whereas JavaScript is an interpreted language.
+TypeScript has a feature that is strongly typed or supports static typing. That means Static typing allows for checking type correctness at compile time. This is not available in JavaScript.
+TypeScript is nothing but JavaScript and some additional features i.e. ES6 features. It may not be supported in your target browser but the TypeScript compiler can compile the .ts files into ES3, ES4, and ES5 also.
+Disadvantages of using TypeScript over JavaScript
+
+Generally, TypeScript takes time to compile the code.
+
+*/
